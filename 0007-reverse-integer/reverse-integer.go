@@ -19,16 +19,16 @@ package _007_reverse_integer
 //Assume we are dealing with an environment which could only store integers within the 32-bit signed integer range: [−231,  231 − 1].
 //For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
 
-// Runtime: 4 ms, faster than 39.77% of Go online submissions for Reverse Integer.
-// Memory Usage: 2.3 MB, less than 20.00% of Go online submissions for Reverse Integer.
+// Runtime: 0 ms, faster than 100.00% of Go online submissions for Reverse Integer.
+// Memory Usage: 2.2 MB, less than 80.00% of Go online submissions for Reverse Integer.
 func reverse(x int) (result int) {
 	for x != 0 {
 		mod := x % 10
 		result = result*10 + mod
+		if result > 0x7fffffff || result < -0x80000000 {
+			return 0
+		}
 		x /= 10
-	}
-	if result > 0x7fffffff || result < -0x80000000 {
-		return 0
 	}
 	return
 }
