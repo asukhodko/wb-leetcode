@@ -20,24 +20,15 @@ package _007_reverse_integer
 //For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
 
 // Runtime: 4 ms, faster than 39.77% of Go online submissions for Reverse Integer.
-// Memory Usage: 2.2 MB, less than 20.00% of Go online submissions for Reverse Integer.
-func reverse(x int) int {
-	result := 0
-	isNegative := x < 0
-	if isNegative {
-		x = -x
-	}
-	for x > 0 {
+// Memory Usage: 2.3 MB, less than 20.00% of Go online submissions for Reverse Integer.
+func reverse(x int) (result int) {
+	for x != 0 {
 		mod := x % 10
 		result = result*10 + mod
 		x /= 10
 	}
-	if result > 0x7fffffff {
+	if result > 0x7fffffff || result < -0x80000000 {
 		return 0
 	}
-	if isNegative {
-		return -result
-	} else {
-		return result
-	}
+	return
 }
