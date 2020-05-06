@@ -24,18 +24,14 @@ package _066_plus_one
 func plusOne(digits []int) []int {
 	i := len(digits) - 1
 	digits[i]++
-	for {
-		if digits[i] > 9 {
-			digits[i] = 0
-			if i == 0 {
-				digits = append([]int{0}, digits...)
-				i++
-			}
-			digits[i-1]++
-			i--
-		} else {
-			break
+	for digits[i] > 9 {
+		digits[i] = 0
+		if i == 0 {
+			digits = append([]int{0}, digits...)
+			i++
 		}
+		digits[i-1]++
+		i--
 	}
 	return digits
 }
