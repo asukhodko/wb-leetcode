@@ -28,3 +28,7 @@ Input:
 ```
 
 Output: 3
+
+
+Runtime: 0 ms, faster than 100.00% of Go online submissions for Number of Islands.
+Memory Usage: 2.9 MB, less than 33.33% of Go online submissions for Number of Islands.

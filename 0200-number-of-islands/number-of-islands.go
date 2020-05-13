@@ -4,7 +4,7 @@ func zeroIsland(grid *[][]byte, i, j int) {
 	if i == len(*grid) || j == len((*grid)[i]) {
 		return
 	}
-	if (*grid)[i][j] == 0 {
+	if (*grid)[i][j] == 0 || (*grid)[i][j] == '0' {
 		return
 	}
 	(*grid)[i][j] = 0
@@ -25,7 +25,7 @@ func zeroIsland(grid *[][]byte, i, j int) {
 func numIslands(grid [][]byte) (islands int) {
 	for i := 0; i < len(grid); i++ {
 		for j := 0; j < len(grid[i]); j++ {
-			if grid[i][j] == 1 {
+			if grid[i][j] == 1 || grid[i][j] == '1' {
 				islands++
 				zeroIsland(&grid, i, j)
 			}
