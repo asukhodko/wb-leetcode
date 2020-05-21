@@ -52,3 +52,8 @@ Output: -2147483648
 Explanation: The number "-91283472332" is out of the range of a 32-bit signed integer.
              Thefore INT_MIN (−231) is returned.
 ```
+
+# Success
+Details 
+Runtime: 0 ms, faster than 100.00% of Go online submissions for String to Integer (atoi).
+Memory Usage: 2.3 MB, less than 25.00% of Go online submissions for String to Integer (atoi).
