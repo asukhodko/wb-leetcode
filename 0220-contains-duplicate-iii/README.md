@@ -2,7 +2,7 @@
 https://leetcode.com/problems/contains-duplicate-iii/
 
 Success
-Details 
+ 
 Runtime: 152 ms, faster than 57.97% of Go online submissions for Contains Duplicate III.
 Memory Usage: 3.2 MB, less than 100.00% of Go online submissions for Contains Duplicate III.
 https://leetcode.com/submissions/detail/349033731/

@@ -40,6 +40,24 @@ func Test_containsNearbyAlmostDuplicate(t *testing.T) {
 			},
 			want: false,
 		},
+		{
+			name: "Example 4",
+			args: args{
+				nums: []int{1, 2},
+				k:    0,
+				t:    1,
+			},
+			want: false,
+		},
+		{
+			name: "Example 5",
+			args: args{
+				nums: []int{7, 1, 3},
+				k:    2,
+				t:    3,
+			},
+			want: true,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
