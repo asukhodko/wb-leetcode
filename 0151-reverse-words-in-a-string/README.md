@@ -5,7 +5,7 @@ Success
 https://leetcode.com/submissions/detail/349334468/
 
     Runtime: 0 ms, faster than 100.00% of Go online submissions for Reverse Words in a String.
-    Memory Usage: 5 MB, less than 37.79% of Go online submissions for Reverse Words in a String.
+    Memory Usage: 3.8 MB, less than 55.23% of Go online submissions for Reverse Words in a String.
 
 Given an input string, reverse the string word by word.
 

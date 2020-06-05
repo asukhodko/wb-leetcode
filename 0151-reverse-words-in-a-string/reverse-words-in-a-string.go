@@ -9,7 +9,7 @@ func reverseWords(s string) string {
 			if len(word) > 0 {
 				i -= len(word)
 				copy(result[i:], word)
-				word = []rune{}
+				word = word[0:0]
 				i--
 				result[i] = ' '
 			}
