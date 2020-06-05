@@ -2,10 +2,10 @@
 https://leetcode.com/problems/reverse-words-in-a-string/
 
 Success
-https://leetcode.com/submissions/detail/349329805/
+https://leetcode.com/submissions/detail/349334468/
 
-    Runtime: 8 ms, faster than 24.14% of Go online submissions for Reverse Words in a String.
-    Memory Usage: 6.7 MB, less than 31.98% of Go online submissions for Reverse Words in a String.
+    Runtime: 0 ms, faster than 100.00% of Go online submissions for Reverse Words in a String.
+    Memory Usage: 5 MB, less than 37.79% of Go online submissions for Reverse Words in a String.
 
 Given an input string, reverse the string word by word.
 

@@ -1,22 +1,28 @@
 package _151_reverse_words_in_a_string
 
-import "strings"
-
 func reverseWords(s string) string {
 	word := []rune{}
-	result := []string{}
+	result := make([]rune, len(s))
+	i := len(result)
 	for _, c := range s {
 		if c == ' ' {
 			if len(word) > 0 {
-				result = append([]string{string(word)}, result...)
+				i -= len(word)
+				copy(result[i:], word)
 				word = []rune{}
+				i--
+				result[i] = ' '
 			}
 			continue
 		}
 		word = append(word, c)
 	}
 	if len(word) > 0 {
-		result = append([]string{string(word)}, result...)
+		i -= len(word)
+		copy(result[i:], word)
 	}
-	return strings.Join(result, " ")
+	if i < len(result) && result[i] == ' ' {
+		i++
+	}
+	return string(result[i:])
 }
